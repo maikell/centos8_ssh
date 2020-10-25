@@ -1,6 +1,11 @@
 # Centos 8 sshd docker image
 Dockerfile pulls the default Centos 8 Docker container and applies a fresh SSHD daemon installation.
 
+### Pulling the Centos 8 ssh container
+```
+docker pull maikel/centos8_ssh
+```
+
 ### Building the Centos 8 sshd image
 ```
 docker build -t centos8_ssh:latest -t
