@@ -9,7 +9,6 @@ EXPOSE 22
 
 RUN yum clean all && yum upgrade -y && yum -y install openssh openssh-server openssh-clients
    
-
 # SSH files
 RUN mkdir /root/.ssh && chmod 700 /root/.ssh
 ADD ssh_server/* /etc/ssh/

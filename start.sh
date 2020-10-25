@@ -9,7 +9,5 @@
 #/usr/bin/ssh-keygen -q -t rsa -f /etc/ssh/ssh_host_rsa_key -C '' -N ''
 #/usr/bin/ssh-keygen -q -t ed25519 -f /etc/ssh/ssh_host_ed25519_key -C '' -N ''
 
-#sed -i 's/#LogLevel INFO/LogLevel DEBUG/' /etc/ssh/sshd_config
-
 # Now start ssh.
 /usr/sbin/sshd -D
